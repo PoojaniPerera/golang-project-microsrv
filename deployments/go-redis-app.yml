@@ -21,15 +21,16 @@ spec:
         - containerPort: 8080
         env:
         - name: REDIS_HOST
-          value: redis-service
+          value: redis-master
         - name: REDIS_PORT
           value: "6379"
         - name: REDIS_PASSWORD
           value: ""
         - name: REDIS_DB
           value: "0"
-        
-
+        - name: PORT
+          value: "8080"
+         
 
 
 ---
